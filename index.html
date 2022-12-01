@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Webpage for Profile Page" author="Noel Grayda">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <div class="containerMain">
+        <div class="header">
+            <h1 class="headLabel">Profile</h1>
+            <ul>
+                <li class="navBar"><a href="#">Home</a></li>
+                <li class="navBar"><a class="navTextBold" href="#">My Profile</a></li>
+                <li class="navBar"><a href="#">Find Connections</a></li>
+            </ul>
+            <button class="signOutBtn">Sign Out</button>
+        </div>
+        <div class="flexBody">
+            <div class="conBody">
+                <div class="mainProf">
+                    <div class="secondBox">
+                        <div class="tealCoverPhoto">                        
+                            <img class="profPicJD" src="/images/jane-m.jpg" alt="Jane Doe Image">
+                        </div>                                        
+                        <div class="info">
+                            <label id="profName" for="info">Jane Doe</label>
+                        </div>
+                        <div>
+                            <img class="address" src="/icons/map-marker.png" alt="GPS Logo">
+                            <label id="addressCity" for="address">Seattle</label>
+                            <p id="pInfo">Developer | Engineer | Problem Solver
+                                <br> Master of Shadows and the Internet!
+                            </p>
+                        </div>
+                        <div>
+                            <img class="gear" src="/icons/gear.png" alt="Gear Pic">
+                            <a id="editProf" onclick="editProfile()" href="#">edit profile</a>
+                        </div>
+                    </div>
+                    <div class="mainEduc">
+                        <div class="educHead">
+                            <h3 class="textEduc">Education</h3>
+                        </div>
+                        <div class="educBody">
+                            <div>
+                                <h3 class="info2">Coding Dojo Full - Stack Bootcamp</h3>
+                                <h3 class="info3">Dec 2019 - March 2020</h3>
+                                <h4 class="info4">Triple black belt in Python, MERN, and C#...</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainConReq">
+                    <div class="conReqHeader">
+                        <div class="circle1">
+                            <label for="circle1" id="reqNumbers" class="textCircle">2</label>
+                        </div>
+                        <label for="conReqHeader" class="textConReq">Connection Requests</label>                       
+                    </div>
+                    <div class="conReqBody">
+                        <div class="crTodd" id="toddDelete">
+                            <img class="cr1" src="/images/todd-s.jpg" alt="Todd E pic">
+                            <h3 class="textTodd">Todd E</h3>
+                            <img class="acceptCircle" onclick="buttonAccept1()" src="/icons/accept-circle.png" alt="Accept Circle Pic">
+                            <img class="closeCircle" onclick="buttonDelete1()" src="/icons/close-circle.png" alt="Close Circle Pic">
+                        </div>
+                        <div class="crPhil" id="philDelete">
+                            <img class="cr1" src="/images/phil-s.jpg" alt="Phil K pic">
+                            <h3 class="textPhil">Phil K</h3>
+                            <img class="acceptCircle1" onclick="buttonAccept2()" src="/icons/accept-circle.png" alt="Accept Circle Pic">
+                            <img class="closeCircle" onclick="buttonDelete2()" src="/icons/close-circle.png" alt="Close Circle Pic">
+                        </div>
+                    </div>
+                    <div class="mainYourCon">
+                        <div class="yourConHeader">
+                            <div class="circle2">
+                                <label for="circle2" id="conNumbers" class="textCircle">500<span>+</span></label>
+                            </div>
+                            <label for="yourConHeader" class="textConReq">Your Connections</label>
+                        </div>
+                        <div class="yourConBody">
+                            <div class="ycAD">
+                                <img class="cr1" src="/images/adrien-s.jpg" alt="Adrien D pic">
+                                <h3 class="textAdrien">Adrien D</h3>
+                            </div>
+                            <div class="ycAJ">
+                                <img class="cr1" src="/images/anne-s.jpg" alt="Anne J pic">
+                                <h3 class="textAnne">Anne J</h3>
+                            </div>
+                            <div class="ycAT">
+                                <img class="cr1" src="/images/alayne-s.jpg" alt="Alayne T pic">
+                                <h3 class="textAlayne">Alayne T</h3>
+                            </div>
+                            <div class="ycAY">
+                                <img class="cr1" src="/images/arry-s.jpg" alt="Arry Y pic">
+                                <h3 class="textArry">Arry Y</h3>
+                            </div>
+                        </div>
+                        <div class="yourConFooter">
+                            <a class="textViewMoreClass" id="textViewMore" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/script.js"></script>
+</body>
+</html>
